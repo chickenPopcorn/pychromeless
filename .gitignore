@@ -12,3 +12,7 @@ env/
 
 ### Project specifics
 bin/
+
+### Zip files
+*.zip
+
