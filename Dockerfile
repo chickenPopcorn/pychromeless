@@ -10,6 +10,7 @@ WORKDIR $APP_DIR
 COPY requirements.txt .
 COPY bin ./bin
 COPY lib ./lib
+COPY script ./script
 
 RUN mkdir -p $APP_DIR/lib
 RUN pip3 install -r requirements.txt -t /var/task/lib

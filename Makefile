@@ -1,5 +1,6 @@
 clean:
-	rm -rf build build.zip
+	rm -rf build
+	rm -rf build.zip
 	rm -rf __pycache__
 
 fetch-dependencies:
@@ -25,7 +26,7 @@ docker-run:
 
 build-lambda-package: clean fetch-dependencies
 	!(test -f build && rm -rf build)
-	./pip_config.sh
+	.script/pip_config.sh
 	mkdir build
 	cp -r src build/.
 	cp -r bin build/.
