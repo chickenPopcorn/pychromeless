@@ -31,6 +31,7 @@ build-lambda-package: clean fetch-dependencies
 	cp -r bin build/.
 	cp -r lib build/.
 	pip3 install -r requirements.txt -t build/lib/.
+	chmod -R 0777 build/*
 	cd build; zip -9qr build.zip .
 	cp build/build.zip .
 	rm -rf build
