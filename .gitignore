@@ -11,7 +11,8 @@ __pycache__/
 env/
 
 ### Project specifics
-bin/*
+bin/chromedriver
+bin/headless-chromium
 
 ### Zip files
 *.zip
