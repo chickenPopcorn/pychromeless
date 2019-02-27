@@ -8,7 +8,7 @@ ENV APP_DIR /var/task
 WORKDIR $APP_DIR
 
 COPY requirements.txt .
-# COPY bin ./bin
+COPY bin ./bin
 COPY lib ./lib
 
 RUN mkdir -p $APP_DIR/lib
